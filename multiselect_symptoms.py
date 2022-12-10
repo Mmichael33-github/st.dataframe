@@ -27,6 +27,6 @@ user_drugs = drugs.query('generic_name in @user_generics')['specific_drug'].uniq
 user_side_effects = side_effects.query('drug in @user_drugs').sort_values(
     'percentage', ascending = False)
 
-st.write('The drugs you entered are: '), 
+#st.write('The drugs you entered are: '), 
 st.dataframe(user_side_effects['side_effect'].unique().tolist(), use_container_width = True)
 #st.dataframe(user_side_effects, use_container_width = True)
