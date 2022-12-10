@@ -28,5 +28,10 @@ user_side_effects = side_effects.query('drug in @user_drugs').sort_values(
     'percentage', ascending = False)
 
 #st.write('The drugs you entered are: '), 
-st.dataframe(user_side_effects['side_effect'].unique().tolist(), use_container_width = True)
+#st.dataframe(user_side_effects['side_effect'].unique().tolist(), use_container_width = True)
 #st.dataframe(user_side_effects, use_container_width = True)
+
+
+st.write('The drugs you entered are: ', 
+         user_side_effects['side_effect'].unique().tolist())
+
