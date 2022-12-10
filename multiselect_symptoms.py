@@ -35,6 +35,8 @@ user_side_effects = side_effects.query('drug in @user_drugs').sort_values(
 
 st.write('The drugs you entered are: ', 
          user_side_effects['side_effect'].unique().tolist())
-un_drugs = st.dataframe(user_side_effects, use_container_width = True)
+
+
+#st.dataframe(user_side_effects.unique(), use_container_width = True)
 
 
