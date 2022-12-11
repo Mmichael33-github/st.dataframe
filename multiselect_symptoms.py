@@ -18,7 +18,7 @@ drugs.columns = ['input', 'specific_drug', 'generic_name']
 unq_generic = drugs['generic_name'].unique().tolist()
 
 # create multiselect:
-user_generics = st.multiselect('Please enter the medication you want to check:',
+user_generics = st.multiselect('please enter the medication you want to check:',
                                options = unq_generic)
 
 # create a list of unique drug names for user's generics:
