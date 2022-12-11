@@ -30,13 +30,13 @@ user_side_effects = side_effects.query('drug in @user_drugs').sort_values(
 #st.write('The drugs you entered are: ', 
 #        user_side_effects['side_effect'].unique().tolist())
 
-#st.dataframe(user_side_effects, use_container_width = True)
+st.dataframe(user_side_effects, use_container_width = True)
 
 
 #st.write('The drugs you entered are: ', 
 #         user_side_effects['side_effect'].unique().tolist())
 
 
-st.dataframe(user_side_effects(user_side_effects['side_effect', 'patients', 'percentage', 'drug'].group_by(), use_container_width = True))
+#st.dataframe(user_side_effects(user_side_effects['side_effect', 'patients', 'percentage', 'drug'].groupby(), use_container_width = True))
 
 
