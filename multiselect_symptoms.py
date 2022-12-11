@@ -39,4 +39,3 @@ st.dataframe(user_side_effects, df.drop(columns=['patients'], use_container_widt
 
 #st.dataframe(user_side_effects(user_side_effects['side_effect', 'patients', 'percentage', 'drug'].groupby(), use_container_width = True))
 
-#df.drop(columns=['b'], axis=1)
