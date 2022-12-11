@@ -11,7 +11,7 @@ drugs = drugs[['input', 'specific drug', 'generic name']]
 drugs = drugs.dropna()
 
 # rename dataset's columns
-side_effects.columns = ['side_effect', 'patients', 'percentage', 'drug']
+side_effects.columns = ['side_effect',  'percentage', 'drug']
 drugs.columns = ['input', 'specific_drug', 'generic_name']
 
 # create a list of unique generic names, without duplicated entries 
