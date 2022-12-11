@@ -29,8 +29,8 @@ user_side_effects = side_effects.query('drug in @user_drugs').sort_values(
 
 #st.write('The drugs you entered are: ', 
 #        user_side_effects['side_effect'].unique().tolist())
-
-st.dataframe(user_side_effects, use_container_width = True)
+user_side_effects=user_side_effects.drop_duplicates(subset=["side_effect","drug"])
+st.dataframe(user_side_effects.drop_duplicates() use_container_width = True)
 
 
 #st.write('The drugs you entered are: ', 
